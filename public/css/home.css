@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header{
+    background-color: #eac926;
+    padding: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+.headerTopBar{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 50%;
+}
+
+.searchBar{
+    max-width: 50%;
+    padding: 20px;
+}
+
+.searchBar input{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.searchBar button{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.copyHeader{
+    font-size: 10px;
+    margin: 10px;
+}
+
+header nav a{
+    display: none;
+}
+
+.burgerMenu{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+    background-color: #ebebeb;
+}
+
+main h2{
+    font-size: 24px;
+    color: #666;
+    padding: 5px 5px 5px 20px;
+    text-align: left;
+}
+
+main article{
+    margin-bottom: 10px;
+    display: block;
+    border-top: solid 1px #666;
+    border: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+
+main section article i{
+    display: block;
+    color: hsl(128, 52%, 47%);
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    right: -190px;
+    bottom: -15px;
+    transition: transform 400ms;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
+}
+
+.articleInfo{
+    border-top: solid 1px #ebebeb;
+    padding: 5px;
+}
+
+.topArticleInfo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prices{
+    font-size: 18px;
+    max-width: 60%;
+}
+
+.discounts, .descriptions{
+    font-size: 16px;
+}
+
+.discounts{
+    margin: 0;
+    color: #39b54a;
+    max-width: 40%;
+}
+
+.descriptions{
+    color: #666;
+    display: none;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 150ms;
+}
+
+.descriptions:hover{
+    opacity: 100%;
+}
+
+.prices, .descriptions{
+    display: flex;
+    flex-direction: horizontal;
+}
+
+footer {
+    text-align: center;
+}
+
+.footerCreditCard, .footerGift, .footerSafety{
+    font-size: 2em;
+    color: #1259c3;
+    transition: color 150ms;
+}
+
+.footerCreditCard:hover, .footerGift:hover, .footerSafety:hover{
+    color: #0022AA;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footerInfo section{
+    max-width: 30%;
+    height: 90px;
+
+}
+
+.copyright{
+    text-align: left;
+    margin-top: 120px;
+}
+
+@media screen and (min-width: 361px){
+    .descripciones{
+        display: flex;
+    }   
+    main section article{
+        box-shadow: 0;
+        max-width: 40%;
+        margin: 15px;
+        padding: 10px;
+        justify-content: center;
+        transition: box-shadow 200ms;
+    }
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    header{
+        max-width: 100%;
+    }
+    header nav a{
+        display: flex;
+    }
+    .burgerMenu{
+        display: none;
+    }
+    
+    .logo{
+        max-width: 30%;
+    }
+     .headerTopBar{
+         display: flex;
+         text-align: center;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .copyHeader{
+         font-size: 12px;
+     }
+     .headerNavbar{
+         margin-top: 5px;
+         display: flex;
+         justify-content: space-between;
+        font-size: 10px;
+     }
+     .leftNavbar{
+         display: flex;
+     }
+     .rightNavbar{
+         display: flex;
+     }
+     .headerNavbar a{
+         margin: 0 12px;
+     }
+     .lastVisits{
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     }
+     .offers{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+     }
+     .footerCreditCard, .footerGift, .footerSafety{
+         padding: 10px;
+     }
+     .copyright{
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 769px){
+    main section article{
+        max-width: 20%;
+    }
+    .copyHeader{
+        font-size: 16px;
+    }
+    .headerNavbar{
+        font-size: 14px;
+    }
+    .copyright{
+        text-align: left;
+        margin-top: 50px;
+    }
+}
