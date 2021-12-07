@@ -21,23 +21,22 @@ header{
     max-width: 100%;
 }
 
-
 .headerTopBar{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-
 }
 
 .logo{
     max-width: 50%;
 }
+
 .searchBar{
     display: flex;
     flex-direction: main;
-    max-width: 50%;
+    width: 50%;
     padding: 20px;
 }
 
@@ -116,10 +115,12 @@ main form{
     padding-left: 10px;
 
 }
+
 main form input{
     padding: 5px;
     border: solid 1px #1259c3;
 }
+
 main button{
     border: 0;
     background-color: #1259c3;
@@ -128,6 +129,7 @@ main button{
     color: white;
     transition: background-color 200ms;
 }
+
 main button:hover{
     background-color: #0022AA;
 }
@@ -162,7 +164,6 @@ footer {
 .footerInfo section{
     max-width: 30%;
     height: 90px;
-
 }
 
 .copyright{
@@ -171,63 +172,88 @@ footer {
 }
 
 @media screen and (min-width: 361px){
-header{
-    max-width: 100%;
-}
-header nav a{
-    display: flex;
-}
-.burgerMenu{
-    display: none;
-}
+    header{
+        max-width: 100%;
+    }
 
-.logo{
-    max-width: 30%;
-    justify-content: left;
-}
-.searchBar{
-    max-width: 30%;
-}
+    header nav a{
+        display: flex;
+    }
 
-.headerTopBar{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
- .copyHeader{
-     font-size: 12px;
-     max-width: 30%;
- }
- .headerNavbar{
-     margin-top: 5px;
-     display: flex;
-     justify-content: space-between;
-    font-size: 10px;
- }
- .leftNavbar{
-     display: flex;
- }
- .rightNavbar{
-     display: flex;
- }
- .headerNavbar a{
-     margin: 0 12px;
- }
- .copyright{
-    margin-top: 80px;
-}
+    .burgerMenu{
+        display: none;
+    }
+
+    .logo{
+        max-width: 30%;
+        justify-content: left;
+    }
+
+    .searchBar{
+        max-width: 30%;
+    }
+
+    .headerTopBar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .copyHeader{
+        font-size: 10px;
+        max-width: 30%;
+        align-self: center;
+    }
+
+    .headerNavbar{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .leftNavbar{
+        display: flex;
+    }
+
+    .rightNavbar{
+        display: flex;
+    }
+
+    .headerNavbar a{
+        margin: 0 12px;
+    }
+
+    .copyright{
+        margin-top: 80px;
+    }
 }
 
 @media screen and (min-width: 769px){
-.copyHeader{
-    font-size: 16px;
-}
-.headerNavbar{
-    font-size: 14px;
-}
-.copyright{
-    margin-top: 50px;
-}
+    .copyHeader{
+        font-size: 16px;
+    }
+
+    .headerTopBar{
+        flex-wrap: nowrap;
+    }
+
+    .searchBar{
+        max-width: 50%;
+        justify-content: center;
+    }
+
+    .bar{
+        width:90%;
+    }
+
+    .headerNavbar{
+        font-size: 14px;
+    }
+    
+    .copyright{
+        margin-top: 50px;
+    }
 }
 
 
