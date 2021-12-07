@@ -18,27 +18,56 @@ header{
     padding: 10px;
     margin-bottom: 0;
     border-bottom: 0;
+    max-width: 100%;
 }
+
+
 .headerTopBar{
     display: flex;
-    text-align: center;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+
 }
 
 .logo{
     max-width: 50%;
 }
-
 .searchBar{
+    display: flex;
+    flex-direction: main;
     max-width: 50%;
+    padding: 20px;
 }
+
+.searchBar input{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    max-width: 95%;
+}
+
+.searchBar button{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.searchButton{
+    position: relative;
+    left: -5.5px;
+}
+
 
 .copyHeader{
     font-size: 10px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav a{
@@ -59,11 +88,22 @@ main{
     background-color: #ebebeb;
     height: 300px;
     padding: 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 
 main h2{
     font-size: 20px;
+}
 
+main form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 5px;
 }
 
 .form{
@@ -74,20 +114,15 @@ main h2{
     font-size: 14px;
     gap: 5px;
     padding-left: 10px;
-    border: solid 2px red;
 
 }
-
-main form{
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    gap: 5px;
+main form input{
+    padding: 5px;
+    border: solid 1px #1259c3;
 }
 main button{
     border: 0;
     background-color: #1259c3;
-    max-width: 18%;
     padding: 3px;
     margin-top: 10px;
     color: white;
@@ -107,75 +142,92 @@ footer {
     text-align: center;
 }
 
-.footerInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 .footerCreditCard, .footerGift, .footerSafety{
     font-size: 2em;
-    margin-bottom: 10px;
     color: #1259c3;
     transition: color 150ms;
+    padding-top: 10px;
 }
 
 .footerCreditCard:hover, .footerGift:hover, .footerSafety:hover{
     color: #0022AA;
 }
 
-.copyright{
-    text-align: left;
-    margin-top: 10px;
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
+.footerInfo section{
+    max-width: 30%;
+    height: 90px;
+
+}
+
+.copyright{
+    text-align: left;
+    margin-top: 130px;
+}
 
 @media screen and (min-width: 361px){
-    }
-    header{
-        max-width: 100%;
-    }
-    header nav a{
-        display: flex;
-    }
-    .burgerMenu{
-        display: none;
-    }
-    
-    .logo{
-        max-width: 30%;
-    }
-     .headerTopBar{
-         display: flex;
-         text-align: center;
-         justify-content: space-between;
-         align-items: center;
-     }
-     .copyHeader{
-         font-size: 12px;
-     }
-     .headerNavbar{
-         margin-top: 5px;
-         display: flex;
-         justify-content: space-between;
-        font-size: 10px;
-     }
-     .leftNavbar{
-         display: flex;
-     }
-     .rightNavbar{
-         display: flex;
-     }
-     .headerNavbar a{
-         margin: 0 12px;
-     }
+header{
+    max-width: 100%;
+}
+header nav a{
+    display: flex;
+}
+.burgerMenu{
+    display: none;
+}
+
+.logo{
+    max-width: 30%;
+    justify-content: left;
+}
+.searchBar{
+    max-width: 30%;
+}
+
+.headerTopBar{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ .copyHeader{
+     font-size: 12px;
+     max-width: 30%;
+ }
+ .headerNavbar{
+     margin-top: 5px;
+     display: flex;
+     justify-content: space-between;
+    font-size: 10px;
+ }
+ .leftNavbar{
+     display: flex;
+ }
+ .rightNavbar{
+     display: flex;
+ }
+ .headerNavbar a{
+     margin: 0 12px;
+ }
+ .copyright{
+    margin-top: 80px;
+}
 }
 
 @media screen and (min-width: 769px){
-    .copyHeader{
-        font-size: 16px;
-    }
-    .headerNavbar{
-        font-size: 14px;
-    }
+.copyHeader{
+    font-size: 16px;
 }
+.headerNavbar{
+    font-size: 14px;
+}
+.copyright{
+    margin-top: 50px;
+}
+}
+
+

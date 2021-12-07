@@ -18,22 +18,25 @@ header{
     padding: 10px;
     margin-bottom: 0;
     border-bottom: 0;
+    max-width: 100%;
 }
+
 
 .headerTopBar{
     display: flex;
-    text-align: center;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+
 }
 
 .logo{
     max-width: 50%;
 }
-
 .searchBar{
+    display: flex;
+    flex-direction: main;
     max-width: 50%;
     padding: 20px;
 }
@@ -43,6 +46,7 @@ header{
     padding: 5px;
     border: none;
     outline: none;
+    max-width: 95%;
 }
 
 .searchBar button{
@@ -53,9 +57,17 @@ header{
     background-color: white;
 }
 
+.searchButton{
+    position: relative;
+    left: -5.5px;
+}
+
+
 .copyHeader{
     font-size: 10px;
     margin: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 header nav a{
@@ -95,25 +107,6 @@ main article{
 }
 
 
-main section article i{
-    display: block;
-    color: hsl(128, 52%, 47%);
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #fff;
-    border-radius: 50%;
-    position: relative;
-    right: -190px;
-    bottom: -15px;
-    transition: transform 400ms;
-}
-
-main section article i:hover{
-    transform: rotate(-90deg);
-}
 
 .articleInfo{
     border-top: solid 1px #ebebeb;
@@ -123,8 +116,25 @@ main section article i:hover{
 .topArticleInfo{
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
+main section article i{
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: transform 400ms;
+}
+
+main section article i:hover{
+    transform: rotate(-90deg);
+}
 .prices{
     font-size: 18px;
     max-width: 60%;
@@ -188,7 +198,11 @@ footer {
     margin-top: 120px;
 }
 
+
 @media screen and (min-width: 361px){
+    header{
+        width: 100%;
+    }
     .descripciones{
         display: flex;
     }   
@@ -204,9 +218,6 @@ footer {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    header{
-        max-width: 100%;
-    }
     header nav a{
         display: flex;
     }
@@ -216,15 +227,20 @@ footer {
     
     .logo{
         max-width: 30%;
+        justify-content: left;
     }
-     .headerTopBar{
-         display: flex;
-         text-align: center;
-         justify-content: space-between;
-         align-items: center;
-     }
+    .searchBar{
+        max-width: 30%;
+    }
+
+    .headerTopBar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
      .copyHeader{
          font-size: 12px;
+         max-width: 30%;
      }
      .headerNavbar{
          margin-top: 5px;
@@ -251,11 +267,12 @@ footer {
         justify-content: space-between;
         flex-wrap: wrap;
      }
+    
      .footerCreditCard, .footerGift, .footerSafety{
          padding: 10px;
      }
      .copyright{
-        margin-top: 70px;
+        margin-top: 130px;
     }
 }
 

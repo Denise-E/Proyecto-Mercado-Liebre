@@ -13,12 +13,13 @@
     <header>
         <section class="headerTopBar">
             <img src="/images/logo_ml.svg" alt="Logo Mercado Liebre" class="logo">
-            <nav class="searchBar" id="searchform">
-                <input type="text" id="searchterm" placeholder="Buscar productos, marcas y más" />
-                <button type="button" id="search"> <i class="fas fa-search"></i></button>
+            <nav class="searchBar">
+                <input type="text" placeholder="Buscar productos, marcas y más">
+                <button type="button" class="searchButton"> <i class="fas fa-search"></i></button>
             </nav>
-            <h2 class="copyHeader"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
         </section>
+            <h2 class="copyHeader"> <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+        
         <section class="headerNavbar">
         <nav class="leftNavbar">
             <a href="#">Ofertas</a>
@@ -36,16 +37,16 @@
             <i class="fas fa-bars"></i>
         </div>
     </header>
-
     <main>
-        <section><h2>Crear cuenta</h2></section>
         <form action="/register" method="GET">
+            <section><h2>Crear cuenta</h2></section>
             <section class="form">
                 <h2>Datos personales</h2>
                 <label>Nombre:</label>
                 <input type="text" name="name" id="" minlength="3" required>
                 <span class="feedback"></span>
                 <label for="">Apellido:</label>
+
                 <input type="text" name="lastName" id="" required>
                 <label for="">Correo electrónico:</label>
                 <input type="email" name="email" id="">
@@ -69,17 +70,17 @@
                 </select>
                 <label for="">Intereses 
                     <section class="interests">
-                        <label for="interests"><input type="checkbox" name="interests" value="Electrónica">Electronica</label>
-                        <label for="interests"><input type="checkbox" name="intereses" value="Moda">Moda</label>
-                        <label for="interests"><input type="checkbox" name="intereses" value="Hogar">Hogar</label>
-                        <label for="interests"><input type="checkbox" name="intereses" value="Juguetería">Juguetería</label>
-                        <label for="interests"><input type="checkbox" name="intereses" value="Vida sana">Vida sana</label>   
+                        <label for="interests"><input type="checkbox" name="interests" value="Electrónica"> Electronica</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Moda"> Moda</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Hogar"> Hogar</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Juguetería"> Juguetería</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Vida sana"> Vida sana</label>   
                     </section>
                 </label>  
                 
             <section>  
                 <label for="">Foto de perfil:</label>
-                <input type="file" name="peofilePicture" accept=".jpg,.png">
+                <input type="file" name="profilePicture" class="profilePicture" accept=".jpg,.png">
                 <button type="submit"><a href="/">Enviar</a></button> 
                 <button type="reset">Borrar</button>
             </section>
