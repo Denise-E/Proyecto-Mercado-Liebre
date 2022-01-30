@@ -12,3 +12,4 @@ app.use(express.static(path.resolve(__dirname, "../public")));
 
 app.use(require("./routes/index"));
 app.use("/users", require("./routes/user"));
+app.use("/products", require("./routes/products"));
