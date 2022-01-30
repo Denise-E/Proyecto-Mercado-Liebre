@@ -27,12 +27,14 @@ main h2{
 }
 
 main article{
-    margin-bottom: 10px;
+    margin: 0 10% 1.5rem 10%;
     display: block;
     border-top: solid 1px #666;
     border: 15px;
     text-align: left;
     background-color: white;
+    width: 80%;
+    
 }
 
 .articleInfo{
@@ -139,10 +141,11 @@ footer {
     main section article{
         box-shadow: 0;
         max-width: 40%;
-        margin: 15px;
+        margin: 1rem 1.5rem;
         padding: 10px;
         justify-content: center;
         transition: box-shadow 200ms;
+
     }
 
     main section article:hover{
@@ -150,8 +153,6 @@ footer {
     }
 
     
-
-
     .lastVisits{
         display: flex;
         justify-content: space-between;
