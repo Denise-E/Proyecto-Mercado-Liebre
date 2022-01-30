@@ -67,6 +67,14 @@ header{
 
 header nav a{
     display: none;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+    transition: all 200ms;
+}
+
+header nav a:hover{
+    color: #1259c3;
 }
 
 .burgerMenu{
