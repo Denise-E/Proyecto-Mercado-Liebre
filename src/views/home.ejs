@@ -7,100 +7,36 @@
         <picture class="homeBanner"><img src="/images/home-banner.jpg" alt="homeBanner"></picture> 
         <section><h2>Basado en tu última visita</h2></section>
         <section class="lastVisits">
-            <article>
-                <img src="/images/cafetera-moulinex.jpg" alt="cafeteraMoulinex">
+            <% products.forEach(element => { %>
+                <article>
+                    <img src= "/images/<%=element.image %>">
                 <section class="articleInfo">
                     <i class="fas fa-truck"></i> 
                     <section class="topArticleInfo">
-                     <p class="prices">$6.770</p>
-                     <p class="discounts">40% off</p>   
+                     <p class="prices">$ <%= element.price %> </p>
+                     <p class="discounts"><%= element.discount %>% OFF</p>   
                     </section>
-                <p class="descriptions">Cafetera Moulinex</p>  
+                <p class="descriptions"> <%= element.name %> </p>  
                 </section>
-            </article>
-            <article>
-                <img src="/images/macbook-pro-2019.jpg" alt="MacbookPro2019">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                    <section class="topArticleInfo">
-                        <p class="prices">$230.000</p>
-                        <p class="discounts">20% off</p>
-                    </section>
-                 <p class="descriptions">MacBook Pro 2019</p>   
-                </section>
-            </article>
-            <article>
-                <img src="/images/samsung-galaxy-s10.jpg" alt="samsungGalaxyS10">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                    <section class="topArticleInfo">
-                        <p class="prices">$70.500</p>
-                        <p class="discounts">10% off</p>
-                    </section>
-                 <p class="descriptions">Samsung Glaxy S10</p>  
-                </section>
-            </article>
-            <article>
-                <img src="/images/tv-samsung-smart.jpg" alt="tvSamsungSmart">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                   <section class="topArticleInfo">
-                        <p class="prices">$23.200</p>
-                        <p class="discounts">5% off</p>
-                   </section>
-                 <p class="descriptions">SmartTv Samsung 43"</p>
-                </section>
-            </article>
+                </article>
+            <% }) %>
         </section>
 
         <section><h2>Ofertas</h2></section>
         <section class="offers">
-            <article>
-                <img src="/images/cafetera-moulinex.jpg" alt="cafeteraMoulinex">
+            <% products.forEach(element => { %>
+                <article>
+                    <img src= "/images/<%=element.image %>">
                 <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
+                    <i class="fas fa-truck"></i> 
                     <section class="topArticleInfo">
-                     <p class="prices">$6.770</p>
-                     <p class="discounts">40% off</p>
+                     <p class="prices">$ <%= element.price %> </p>
+                     <p class="discounts"><%= element.discount %>% OFF</p>   
                     </section>
-                
-                 <p class="descriptions">Cafetera Moulinex</p>
+                <p class="descriptions"> <%= element.name %> </p>  
                 </section>
-            </article>
-            <article>
-                <img src="/images/macbook-pro-2019.jpg" alt="MacbookPro2019">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                    <section class="topArticleInfo">
-                        <p class="prices">$230.000</p>
-                        <p class="discounts">20% off</p>
-                    </section>
-                  
-                  <p class="descriptions">MacBook Pro 2019</p>  
-                </section>
-            </article>
-            <article>
-                <img src="/images/samsung-galaxy-s10.jpg" alt="samsungGalaxyS10">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                    <section class="topArticleInfo">
-                        <p class="prices">$70.500</p>
-                        <p class="discounts">10% off</p>
-                    </section>
-                 <p class="descriptions">Samsung Glaxy S10</p>  
-                </section>
-            </article>
-            <article>
-                <img src="/images/tv-samsung-smart.jpg" alt="tvSamsungSmart">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i>
-                    <section class="topArticleInfo">
-                        <p class="prices">$23.200</p>
-                        <p class="discounts">5% off</p>
-                    </section>
-                  <p class="descriptions">SmartTv Samsung 43"</p>  
-                </section>
-            </article>
+                </article>
+            <% }) %>
         </section>
     </main>
 

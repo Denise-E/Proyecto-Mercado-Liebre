@@ -5,7 +5,7 @@
         "brand": "Moulinex",
         "price": 6770,
         "discount": 40,
-        "image": "/images/cafetera-moulinex.jpg"
+        "image": "cafeteraMoulinex.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "brand": "Apple",
         "price": 230000,
         "discount": 20,
-        "image": "/images/macbook-pro-2019.jpg"
+        "image": "macbook-pro-2019.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "brand": "Samsung",
         "price": 70500,
         "discount": 10,
-        "image": "/images/samsung-galaxy-s10.jpg"
+        "image": "samsung-galaxy-s10.jpg"
     },
     {
         "id": 4,
@@ -29,6 +29,6 @@
         "brand": "Samsung",
         "price": 23200,
         "discount": 5,
-        "image": "/images/tv-samsung-smart.jpg"
+        "image": "tv-samsung-smart.jpg"
     }
 ]
