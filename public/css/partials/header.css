@@ -1,0 +1,153 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    background-color: #eac926;
+    padding: 10px;
+    margin-bottom: 0;
+    border-bottom: 0;
+    max-width: 100%;
+}
+
+
+.headerTopBar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo{
+    max-width: 50%;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: main;
+    width: 50%;
+    padding: 20px;
+}
+
+.searchBar input{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    max-width: 95%;
+}
+
+.searchBar button{
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.searchButton{
+    position: relative;
+    left: -5.5px;
+}
+
+
+.copyHeader{
+    font-size: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav a{
+    display: none;
+}
+
+.burgerMenu{
+    color: white;
+    background-color: #1259c3;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 30px;
+    text-align: center;
+    margin: auto;
+}
+
+@media screen and (min-width: 361px){
+    header{
+        width: 100%;
+    }
+    header nav a{
+        display: flex;
+    }
+
+    .burgerMenu{
+        display: none;
+    }
+
+    .logo{
+        max-width: 30%;
+        justify-content: left;
+    }
+
+    .searchBar{
+        max-width: 30%;
+    }
+    
+    .headerTopBar{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .copyHeader{
+        font-size: 10px;
+        max-width: 30%;
+        align-self: center;
+    }
+
+    .headerNavbar{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+    }
+
+    .leftNavbar{
+        display: flex;
+    }
+
+    .rightNavbar{
+         display: flex;
+    }
+
+    .headerNavbar a{
+        margin: 0 12px;
+    }
+}
+
+@media screen and (min-width: 769px){
+
+    .copyHeader{
+        font-size: 16px;
+    }
+
+    .headerTopBar{
+        flex-wrap: nowrap;
+    }
+
+    .searchBar{
+        max-width: 50%;
+        justify-content: center;
+    }
+
+    .bar{
+        width: 90%;
+    }
+}
