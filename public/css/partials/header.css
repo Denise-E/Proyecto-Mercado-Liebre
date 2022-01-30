@@ -143,7 +143,8 @@ header nav a:hover{
 @media screen and (min-width: 769px){
 
     .copyHeader{
-        font-size: 16px;
+        font-size: 13px;
+        text-align: center;
     }
 
     .headerTopBar{

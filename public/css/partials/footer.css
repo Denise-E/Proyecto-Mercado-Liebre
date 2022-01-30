@@ -21,22 +21,35 @@ footer {
 
 .footerInfo{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footerInfo section{
-    max-width: 30%;
+    max-width: 80%;
     height: 90px;
+    margin: 1rem;
+    align-self: center;
 }
 
 .copyright{
     text-align: left;
-    margin-top: 120px;
+    margin-top: 2rem;
+    margin-left: 1rem;
 }
 
 @media screen and (min-width: 361px){
- 
+    .footerInfo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .footerInfo section{
+        max-width: 30%;
+        height: 90px;
+        font-size: 12px;
+    }
+
     .footerCreditCard, .footerGift, .footerSafety{
         padding: 10px;
     }
