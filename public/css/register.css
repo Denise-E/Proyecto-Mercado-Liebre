@@ -4,89 +4,20 @@
     padding: 0;
 }
 
-img{
-    max-width: 100%;
-}
-
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
 
-header{
-    background-color: #eac926;
-    padding: 10px;
-    margin-bottom: 0;
-    border-bottom: 0;
-    max-width: 100%;
-}
-
-.headerTopBar{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.logo{
-    max-width: 50%;
-}
-.searchBar{
-    display: flex;
-    flex-direction: main;
-    width: 50%;
-    padding: 20px;
-}
-
-.searchBar input{
-    border-radius: 3px;
-    padding: 5px;
-    border: none;
-    outline: none;
-    max-width: 95%;
-}
-
-.searchBar button{
-    border-radius: 3px;
-    padding: 5px;
-    border: none;
-    outline: none;
-    background-color: white;
-}
-
-.searchButton{
-    position: relative;
-    left: -5.5px;
-}
-
-.copyHeader{
-    font-size: 10px;
-    margin: 10px;
-    justify-content: center;
-    align-items: center;
-}
-
-header nav a{
-    display: none;
-}
-
-.burgerMenu{
-    color: white;
-    background-color: #1259c3;
-    border-radius: 5px;
-    padding: 5px;
-    max-width: 30px;
-    text-align: center;
-    margin: auto;
-}
 
 main{
+    background-color: #ebebeb;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
     display: flex;
     justify-content: center;
-    background-color: #ebebeb;
-    height: 100%;
-    padding: 30px;
+    height: 56rem;
 }
 
 main form{
@@ -126,34 +57,28 @@ main h2{
 .interests{
     display: flex;
     flex-direction: column;
+    padding: 0.5rem;
 }
 
 .interests label{
     margin: 2px;
     accent-color: #1259c3;
+    text-align: left;
+    margin-left: 5.5rem;
 }
 
 
 main form button{
     border: 0;
     background-color: #1259c3;
-    max-width: 18%;
+    width: 25%;
     padding: 3px;
     margin-top: 10px;
     color: white;
+   transition: background-color 200ms;
 }
 
-main button{
-    border: 0;
-    background-color: #1259c3;
-    max-width: 18%;
-    padding: 3px;
-    margin-top: 10px;
-    color: white;
-    transition: background-color 200ms;
-}
-
-main button:hover{
+main form button:hover{
     background-color: #0022AA;
 }
 
@@ -163,119 +88,4 @@ main button a{
     text-decoration: none;
 }
 
-footer {
-    text-align: center;
-}
 
-.footerCreditCard, .footerGift, .footerSafety{
-    font-size: 2em;
-    color: #1259c3;
-    transition: color 150ms;
-    padding-top: 10px;
-}
-
-.footerCreditCard:hover, .footerGift:hover, .footerSafety:hover{
-    color: #0022AA;
-}
-
-.footerInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footerInfo section{
-    max-width: 30%;
-    height: 90px;
-}
-
-.copyright{
-    text-align: left;
-    margin-top: 130px;
-}
-
-
-@media screen and (min-width: 361px){
-    header{
-        max-width: 100%;
-    }
-
-    header nav a{
-        display: flex;
-    }
-
-    .burgerMenu{
-        display: none;
-    }
-    
-    .logo{
-        max-width: 30%;
-        justify-content: left;
-    }
-
-    .searchBar{
-        max-width: 30%;
-    }
-
-    .headerTopBar{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .copyHeader{
-        font-size: 10px;
-        max-width: 30%;
-        align-self: center;
-    }
-
-    .headerNavbar{
-        margin-top: 5px;
-        display: flex;
-        justify-content: space-between;
-        font-size: 10px;
-    }
-
-    .leftNavbar{
-        display: flex;
-    }
-
-    .rightNavbar{
-        display: flex;
-    }
-    
-    .headerNavbar a{
-        margin: 0 12px;
-    }
-
-    .copyright{
-        margin-top: 60px;
-    }
-}
-
-@media screen and (min-width: 769px){
-    .copyHeader{
-        font-size: 16px;
-    }
-
-    .headerTopBar{
-        flex-wrap: nowrap;
-    }
-
-    .searchBar{
-        max-width: 50%;
-        justify-content: center;
-    }
-
-    .bar{
-        width: 90%;
-    }
-
-    .headerNavbar{
-        font-size: 14px;
-    }
-    
-    .copyright{
-        margin-top: 45px;
-    }
-}
