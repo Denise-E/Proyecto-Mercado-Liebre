@@ -4,7 +4,24 @@
     <%- include("../includes/header")  %> 
 
     <main>
-        <h1>Hola</h1>
+       
+                <article> 
+                    <img src= "/images/<%=product.image %>">
+                <section class="articleInfo">
+                    <h1><%= product.name %> </h1>
+                     <p class="prices">$ <%= product.price %> </p>  
+                     <!--
+                     <li>
+                          product.description[0].forEach(element => { %>
+                                element.description[0] %> 
+                             }) %>
+                   </li>   -->       
+                <form action="GET">
+                    <button type="submit">Comprar ahora</button>
+                </form>      
+                </section> 
+                </article>
+               
     </main>
 
     <%- include("../includes/footer") %> %> 

@@ -5,6 +5,10 @@
         "brand": "Moulinex",
         "price": 6770,
         "discount": 40,
+        "description" : [
+            "Cafetera para cápsulas monodosis.","Funcionamiento: automática.", "Su capacidad es de 0.6 L.", "Su estructura es de plástico.", "Permite llenar 1 taza.", 
+            "Potencia de 1500 W.", "Incluye bandeja recolectora removible.", "Modo de uso muy sencillo e intuitivo."
+        ],
         "image": "cafeteraMoulinex.jpg"
     },
     {

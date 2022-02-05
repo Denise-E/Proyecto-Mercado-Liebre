@@ -1,9 +1,11 @@
+const model = require("../models/products");
+const products = require("../data/products.json");
 
 module.exports = {
-    list: (req, res)=> res.render("products/list",{
-        styles: ["/products/list"]
-    }),
-    show: (req, res)=> res.render("products/show",{
-        styles: ["/products/show"]
-    }),
+    show: (req, res)=> {
+         res.render("products/show",{
+            product: products.find(product => product.id == req.params.id),
+            styles: ["/products/show"]
+    }) 
+}
 }

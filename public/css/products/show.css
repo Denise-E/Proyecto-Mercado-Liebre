@@ -8,3 +8,70 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(204, 204, 204, 0.349);
+    transition: all 200ms;
+}
+
+main:hover{
+    background-color: #7471713b;
+}
+
+
+article{
+    border: 1px solid rgba(204, 204, 204, 0.918);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+
+h1{
+    margin: 1rem 0;
+}
+
+form{
+    margin-top: 1rem ;
+}
+
+main form button{
+    border: 0;
+    background-color: #1259c3;
+    border-radius:0.25rem;
+    width: 60%;
+    padding: 0.5rem;
+    margin-top: 10px;
+    color: white;
+   transition: background-color 200ms;
+}
+
+main form button:hover{
+    background-color: #0022AA;
+}
+
+@media screen and (min-width: 361px){
+    img {
+        width: 40%;
+        margin-right: 1rem;
+    }
+    article{
+        display: flex;
+        padding:0.5rem;
+    }
+    main form button{
+        width: 8rem;
+    }
+}
+
+@media screen and (min-width: 769px){
+    img {
+        margin-right: 2rem;
+    }
+}
+
