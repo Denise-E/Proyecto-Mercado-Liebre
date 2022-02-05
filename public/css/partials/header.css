@@ -87,6 +87,11 @@ header nav a:hover{
     margin: auto;
 }
 
+.leftNavbar select{
+    border: none;
+    background-color: #eac926;
+}
+
 @media screen and (min-width: 361px){
     header{
         width: 100%;

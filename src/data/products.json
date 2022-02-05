@@ -3,6 +3,7 @@
         "id": 1,
         "name": "Cafetera Moulinex",
         "brand": "Moulinex",
+        "category": "Electrodomésticos",
         "price": 6770,
         "discount": 40,
         "description" : [
@@ -15,6 +16,7 @@
         "id": 2,
         "name": "Macbook Pro 2019",
         "brand": "Apple",
+        "category": "Tecnología",
         "price": 230000,
         "discount": 20,
         "image": "macbook-pro-2019.jpg"
@@ -23,6 +25,7 @@
         "id": 3,
         "name": "Samsung Galaxy S10",
         "brand": "Samsung",
+        "category": "Tecnología",
         "price": 70500,
         "discount": 10,
         "image": "samsung-galaxy-s10.jpg"
@@ -31,6 +34,7 @@
         "id": 4,
         "name": "SmartTv Samsung 43´ ",
         "brand": "Samsung",
+        "category": "Tecnología",
         "price": 23200,
         "discount": 5,
         "image": "tv-samsung-smart.jpg"
