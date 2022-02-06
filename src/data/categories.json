@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "category": "Tecnología"
+    },
+    {
+        "id": 2,
+        "category": "Electrodomésticos"
+    },
+    {
+        "id": 3,
+        "category": "Fitness"
+    }
+]
