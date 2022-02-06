@@ -8,7 +8,9 @@
         <section><h2>Basado en tu última visita</h2></section>
         <section class="lastVisits">
             <% products.forEach(element => { %>
+                <a href=""> 
                 <article>
+                    <a href="/products/<%= element.id %>">
                     <img src= "/images/<%=element.image %>">
                 <section class="articleInfo">
                     <i class="fas fa-truck"></i> 
@@ -19,23 +21,27 @@
                 <p class="descriptions"> <%= element.name %> </p>  
                 </section>
                 </article>
+            </a>
             <% }) %>
         </section>
 
         <section><h2>Ofertas</h2></section>
         <section class="offers">
             <% products.forEach(element => { %>
-                <article>
-                    <img src= "/images/<%=element.image %>">
-                <section class="articleInfo">
-                    <i class="fas fa-truck"></i> 
-                    <section class="topArticleInfo">
-                     <p class="prices">$ <%= element.price %> </p>
-                     <p class="discounts"><%= element.discount %>% OFF</p>   
+                <a href=""> 
+                    <article>
+                        <a href="/products/<%= element.id %>">
+                        <img src= "/images/<%=element.image %>">
+                    <section class="articleInfo">
+                        <i class="fas fa-truck"></i> 
+                        <section class="topArticleInfo">
+                         <p class="prices">$ <%= element.price %> </p>
+                         <p class="discounts"><%= element.discount %>% OFF</p>   
+                        </section>
+                    <p class="descriptions"> <%= element.name %> </p>  
                     </section>
-                <p class="descriptions"> <%= element.name %> </p>  
-                </section>
-                </article>
+                    </article>
+                </a>
             <% }) %>
         </section>
     </main>

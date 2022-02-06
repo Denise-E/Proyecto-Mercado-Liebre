@@ -102,34 +102,9 @@ main section article i:hover{
     flex-direction: horizontal;
 }
 
-footer {
-    text-align: center;
-}
-
-.footerCreditCard, .footerGift, .footerSafety{
-    font-size: 2em;
-    color: #1259c3;
-    transition: color 150ms;
-}
-
-.footerCreditCard:hover, .footerGift:hover, .footerSafety:hover{
-    color: #0022AA;
-}
-
-.footerInfo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.footerInfo section{
-    max-width: 30%;
-    height: 90px;
-}
-
-.copyright{
-    text-align: left;
-    margin-top: 120px;
+.lastVisits a, .offers a{
+    text-decoration: none;
+    color: black;
 }
 
 
