@@ -58,6 +58,9 @@
            <% if (locals.errors && errors.password) { %>
                <p><%= errors.password.msg %> </p>
               <% } %>
+              <% if (locals.errors && errors.userId) { %>
+                <p><%= errors.userId.msg %> </p>
+               <% } %>
     </main>
 
     <%- include("./includes/footer")  %>    

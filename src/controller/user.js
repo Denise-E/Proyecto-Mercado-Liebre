@@ -1,5 +1,7 @@
 const validator = require('express-validator');
 const model = require('../models/users');
+const bcrypt = require("bcrypt");
+
 module.exports = {
     index: (req, res) => res.send(model.all()),
     login: (req, res)=> res.render("login",{
@@ -24,13 +26,12 @@ module.exports = {
             })
         }
 
-        //Para saber cuado se registran si anteriormente estaban registrados :
-        let exist = user.search("email", req.body.email);
+        let exist = model.search("userId", req.body.userId);
         if (!exist){
             return res.render("login",{ 
                 errors:{
                     email:{
-                        msg: "Email is not registred "
+                        msg: "El usuario no está registrado "
                     }
                 }
             })
@@ -50,7 +51,7 @@ module.exports = {
         // Para la parte de recordar el usuaio (remember):
         //Con este tiempo al cookie dura un mes
         if(req.body.remember){
-            res.cookie("email", req.body.email, {maxAge: 1000*60*60*24*30})
+            res.cookie("userId", req.body.userId, {maxAge: 1000*60*60*24*30})
         }
 
         //Guardo el usuario (si hacer un return, res.send de esto aparece datos usuario)
@@ -79,6 +80,18 @@ module.exports = {
                 errors:{
                     email:{
                         msg: "Email is registred already"
+                    }
+                }
+            })
+        }
+
+        let exists = model.search("userId", req.body.userId);
+        if (exists){
+            return res.render("register",{ 
+                styles:["register"],
+                errors:{
+                    userId:{
+                        msg: "El nombre de usuario ya existe"
                     }
                 }
             })

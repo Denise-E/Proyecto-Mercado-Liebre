@@ -11,8 +11,8 @@ router.get("/login", user.login);
 router.get("/register", user.register);
 router.get("/profile",[access], user.profile);
 
-router.post("/",[validate], user.save);
-router.post("/access",[validate], user.access);
+router.post("/",[validate], user.save); // REGISTER
+router.post("/access", user.access); // LOGIN
 router.post("/logout",[validate], user.logout);
 
 
