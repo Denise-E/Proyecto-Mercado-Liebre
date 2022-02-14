@@ -4,16 +4,20 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "nodemon src/app.js -e mjs,ejs,js,json,html,css",
+    "test": "nodemon src/app.js -e mjs,ejs,js,html,css",
     "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "express-validator": "^6.14.0"
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "multer": "^1.4.4"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

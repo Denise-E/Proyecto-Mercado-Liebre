@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "name": "Denise",
+    "lastName": "Eichen",
+    "email": "denise@mercadoliebre.com",
+    "birthdayDate": "2001-02-01",
+    "adress": "Goyena 80",
+    "userId": "DeniseE",
+    "password": "$2b$10$4PC2XNOOFCrzzVynEcZlZ.3wa7w5d7mfzYvdKE.8TzJltvQoz/72S",
+    "rol": "comprador",
+    "interests": "Electrónica",
+    "idAdmin": true,
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Federico",
+    "lastName": "Rojas",
+    "email": "frojas@gmail.com",
+    "birthdayDate": "2000-01-29",
+    "adress": "Rivadavia 700",
+    "userId": "Fede",
+    "password": "$2b$10$22PQhQmv0m0qyqlyEImxauVoFCp9s0PIrZq2i57M1./F18QFfv86C",
+    "rol": "comprador",
+    "idAdmin": false,
+    "isActive": true
+  },
+  {
+    "id": 3,
+    "name": "SERGIO",
+    "lastName": "EICHENBLAT",
+    "email": "sergio@gmail.com",
+    "birthdayDate": "1956-10-01",
+    "adress": "Goyena 80",
+    "userId": "Sergio",
+    "password": "$2b$10$96YQa0kqDwHzlhgh.ElyLOqDKLUn5Xub1V4/OydPNb2ICpBqMSUOC",
+    "rol": "vendedor",
+    "interests": "Electrónica",
+    "idAdmin": false,
+    "isActive": true
+  },
+  {
+    "id": 4,
+    "name": "Vicky",
+    "lastName": "rojas",
+    "email": "victoria@mercadoliebre.com",
+    "birthdayDate": "2005-02-01",
+    "adress": "hola 89",
+    "userId": "vicky",
+    "password": "$2b$10$XblfEDOXuucUuw7Yop55uO4et8COfPNETg4QMToMWP.CtpCLJxf8W",
+    "rol": "comprador",
+    "interests": [
+      "Electrónica"
+    ],
+    "idAdmin": true,
+    "isActive": true
+  }
+]

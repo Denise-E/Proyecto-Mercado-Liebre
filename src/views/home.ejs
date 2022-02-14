@@ -4,6 +4,9 @@
     <%- include("./includes/header")  %> 
     
     <main>
+        <% if (user) { %>
+            <h1>Bienvenido <%= user.name %> ! </h1>
+            <% } %>
         <picture class="homeBanner"><img src="/images/home-banner.jpg" alt="homeBanner"></picture> 
         <section><h2>Basado en tu última visita</h2></section>
         <section class="lastVisits">

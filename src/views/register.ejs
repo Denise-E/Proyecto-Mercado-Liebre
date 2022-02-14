@@ -51,6 +51,13 @@
                 <button type="reset">Borrar</button>
             </section>
         </form>
+        <% if (locals.errors && errors.email) { %>
+            <p><%= errors.email.msg %> </p>
+           <% } %>
+           
+           <% if (locals.errors && errors.password) { %>
+               <p><%= errors.password.msg %> </p>
+              <% } %>
     </main>
 
     <%- include("./includes/footer")  %>    

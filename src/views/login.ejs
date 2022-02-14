@@ -13,9 +13,19 @@
                 <label for="">Contraseña:</label>
                 <input type="password" name="password" placeholder="*************" required>
                 <span class="feedback"></span>
-                <button type="submit"><a href="/">Enviar</a></button>   
+                 <label for="">Recordarme
+                     <input type="checkbox" name="remmeber" id="remmeber">
+                 </label>
+                <button type="submit">Iniciar Sesión</button>   
             </section>
         </form>  
+        <% if (locals.errors && errors.email) { %>
+            <p><%= errors.email.msg %> </p>
+           <% } %>
+           
+           <% if (locals.errors && errors.password) { %>
+               <p><%= errors.password.msg %> </p>
+            <% } %>
     </main>
 
     <%- include("./includes/footer")  %>    
