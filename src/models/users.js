@@ -20,7 +20,7 @@ const model = {
         password: bcrypt.hashSync(data.password, 10),
         rol: data.rol,
         interests: [data.interests],
-        // image
+        image: data.image  ? data.image : "default.png",
         idAdmin: String(data.email).includes("@mercadoliebre.com") ,
         isActive: true
     }),

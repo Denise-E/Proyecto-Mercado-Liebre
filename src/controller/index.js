@@ -1,5 +1,7 @@
 const products = require("../data/products.json");
+const users = require("../data/users.json");
 const model = require("../models/products");
+
 
 module.exports = {
     home: (req, res)=> res.render("home",{

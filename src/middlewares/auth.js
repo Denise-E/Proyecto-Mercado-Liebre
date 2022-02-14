@@ -7,4 +7,4 @@ const access = (req,res,next) =>{
     return confirm
 }
 
-model.exports = access
+module.exports = access

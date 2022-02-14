@@ -10,6 +10,7 @@
     "password": "$2b$10$4PC2XNOOFCrzzVynEcZlZ.3wa7w5d7mfzYvdKE.8TzJltvQoz/72S",
     "rol": "comprador",
     "interests": "Electrónica",
+    "image": "default.png",
     "idAdmin": true,
     "isActive": true
   },
@@ -23,6 +24,7 @@
     "userId": "Fede",
     "password": "$2b$10$22PQhQmv0m0qyqlyEImxauVoFCp9s0PIrZq2i57M1./F18QFfv86C",
     "rol": "comprador",
+    "image": "default.png",
     "idAdmin": false,
     "isActive": true
   },
@@ -37,6 +39,7 @@
     "password": "$2b$10$96YQa0kqDwHzlhgh.ElyLOqDKLUn5Xub1V4/OydPNb2ICpBqMSUOC",
     "rol": "vendedor",
     "interests": "Electrónica",
+    "image": "default.png",
     "idAdmin": false,
     "isActive": true
   },
@@ -53,7 +56,25 @@
     "interests": [
       "Electrónica"
     ],
+    "image": "default.png",
     "idAdmin": true,
+    "isActive": true
+  },
+  {
+    "id": 5,
+    "name": "Alan",
+    "lastName": "Buengueroff",
+    "email": "alan@soyyo.com",
+    "birthdayDate": "2001-01-20",
+    "adress": "Diaz Velez y Rivadavia ",
+    "userId": "AlanB.",
+    "password": "$2b$10$qNoPr2Wr2JQXkGpP3gpcoOBAoRSf1NO768K4vp/MrAj0kS64wcp/K",
+    "rol": "comprador",
+    "interests": [
+      null
+    ],
+    "image": "default.png",
+    "idAdmin": false,
     "isActive": true
   }
 ]

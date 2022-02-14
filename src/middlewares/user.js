@@ -1,7 +1,7 @@
 const userModel = require("../models/users");
 
 const user = (req,res,next) =>{
-    //Porque inicialmente no hay usuarios ne la app
+    //Porque inicialmente no hay usuarios en la app
     let user = null;
     //Veo si hay cookie y si tiene guardado mail
     if(req.cookie && req.cookie.email){

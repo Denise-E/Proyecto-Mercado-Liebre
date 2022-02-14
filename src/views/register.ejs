@@ -4,7 +4,7 @@
     <%- include("./includes/header")  %> 
 
     <main>
-        <form action="/users/" method="POST">
+        <form action="/users/" method="POST" enctype="multipart/form-data">
             <section><h2>Crear cuenta</h2></section>
             <section class="form">
                 <h2>Datos personales</h2>
@@ -46,7 +46,7 @@
                 
             <section>  
                 <label for="">Foto de perfil:</label>
-                <input type="file" name="profilePicture" class="profilePicture" accept=".jpg,.png">
+                <input type="file" name="image" class="profilePicture">
                 <button type="submit">Registrarme</button> 
                 <button type="reset">Borrar</button>
             </section>
