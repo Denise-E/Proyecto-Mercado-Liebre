@@ -11,7 +11,7 @@
     "rol": "comprador",
     "interests": "Electrónica",
     "image": "default.png",
-    "idAdmin": true,
+    "isAdmin": true,
     "isActive": true
   },
   {
@@ -25,8 +25,8 @@
     "password": "$2b$10$22PQhQmv0m0qyqlyEImxauVoFCp9s0PIrZq2i57M1./F18QFfv86C",
     "rol": "comprador",
     "image": "default.png",
-    "idAdmin": false,
-    "isActive": true
+    "isAdmin": false,
+    "isActive": false
   },
   {
     "id": 3,
@@ -40,7 +40,7 @@
     "rol": "vendedor",
     "interests": "Electrónica",
     "image": "default.png",
-    "idAdmin": false,
+    "isAdmin": false,
     "isActive": true
   },
   {
@@ -57,7 +57,7 @@
       "Electrónica"
     ],
     "image": "default.png",
-    "idAdmin": true,
+    "isAdmin": true,
     "isActive": true
   },
   {
@@ -74,7 +74,8 @@
       null
     ],
     "image": "default.png",
-    "idAdmin": false,
+    "isAdmin": false,
     "isActive": true
   }
+
 ]

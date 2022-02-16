@@ -1,0 +1,57 @@
+<%- include("../includes/head")  %> 
+
+<body>
+    <%- include("../includes/header")  %> 
+
+    <main>
+        <form action="/users/<%= user.id %>?m=PUT" method="POST" enctype="multipart/form-data">
+            <section><h2>Edite aquí sus datos :</h2></section>
+            <section class="form">
+                <h2>Datos personales</h2>
+                <label>Nombre:</label>
+                <input type="text" name="name" id="" minlength="2">
+                <span class="feedback"></span>
+                <label for="">Apellido:</label>
+
+                <input type="text" name="lastName" id="">
+                <label for="">Correo electrónico:</label>
+                <input type="email" name="email" id="">
+                <label for="">Fecha de nacimiento:</label>
+                <input type="date" name="birthdayDate" id="">
+                <label for="">Domicilio:</label>
+                <input type="text" name="adress" id="">
+            </section>
+            <section class="form">
+                <h2>Perfil del Usuario</h2>
+                <label for="">Nombre de usuario:</label>
+                <input type="text" name="userId" required>
+                <label for="">Contraseña:</label>
+                <input type="password" name="password" minlength="8" placeholder="*************" >
+                <label for="">Confirmar contrsaseña:</label>
+                <input type="password" name="passwordConfirmation" minlength="8" placeholder="*************" >
+                <label for="">Tipo de usuario:</label>
+                <select name="rol" id="">
+                    <option value="comprador">Comprador</option>
+                    <option value="vendedor">Vendedor</option>
+                </select>
+                <label for="">Intereses:
+                    <section class="interests">
+                        <label for="interests"><input type="checkbox" name="interests" value="Electrónica"> Electronica</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Moda"> Moda</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Hogar"> Hogar</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Juguetería"> Juguetería</label>
+                        <label for="interests"><input type="checkbox" name="intereses" value="Vida sana"> Vida sana</label>   
+                    </section>
+                </label>  
+                
+            <section>  
+                <label for="">Foto de perfil:</label>
+                <input type="file" name="image" class="profilePicture">
+                <button type="submit">Guardar cambios</button> 
+            </section>
+        </form>
+    </main>
+
+    <%- include("../includes/footer")  %>    
+</body>
+</html>

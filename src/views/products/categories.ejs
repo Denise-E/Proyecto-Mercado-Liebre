@@ -4,8 +4,28 @@
     <%- include("../includes/header")  %> 
     
 <main>
-    <article>
-    </article>
+        <h1><%= category.category %> </h1>
+           
+                
+                <% products.filter(element => element.category == category.category).forEach(element => { %>
+                    <ul class= "listadoProductos">
+                         <li>
+                            <a href="/products/<%= element.id %>"> 
+                                <article>
+                                    <img src= "/images/<%=element.image %>">
+                                <section>
+                                    <section>
+                                        <h3><%= element.name %> </h3>
+                                     <p>$ <%= element.price %> </p>
+                                     <p><%= element.discount %>% OFF</p>   
+                                    </section>
+                                <p> <%= element.name %> </p>  
+                                </section>
+                                </article>
+                            </a>
+                    </li>  
+                </ul>
+                <% }) %>
 </main>
 
 <%- include("../includes/footer") %> %> 

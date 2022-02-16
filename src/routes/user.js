@@ -11,15 +11,24 @@ const upload = multer ({storage: multer.diskStorage({
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })});
 
-router.get("/", [auth], user.index);
+
+
+//[auth]
+router.get("/", user.index);
 
 router.get("/login", user.login);
 router.get("/register", user.register);
 router.get("/profile",[access], user.profile);
 
+router.get("/edit/:id", user.edit);
+
 router.post("/",[validate, upload.single("image")], user.save); // REGISTER
 router.post("/access", user.access); // LOGIN
 router.post("/logout",[validate], user.logout);
+
+router.put("/:id", user.modify);
+router.delete("/", user.delete);
+
 
 
 

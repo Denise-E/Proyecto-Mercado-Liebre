@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Cafetera Moulinex",
         "brand": "Moulinex",
-        "category": "Electrodomésticos",
+        "category": "Hogar",
         "price": 6770,
         "discount": 40,
         "description" : [
@@ -16,27 +16,36 @@
         "id": 2,
         "name": "Macbook Pro 2019",
         "brand": "Apple",
-        "category": "Tecnología",
+        "category": "Electrónica",
         "price": 230000,
         "discount": 20,
+        "description": [
+            "Memoria RAM 64 GB.", "Modelo A2141", "Tamaño de la pantalla 16´", "Capacidad del disco rígido 2 TB", "Nombre del sistema operativo macOS"
+        ],
         "image": "macbook-pro-2019.jpg"
     },
     {
         "id": 3,
         "name": "Samsung Galaxy S10",
         "brand": "Samsung",
-        "category": "Tecnología",
+        "category": "Electrónica",
         "price": 70500,
         "discount": 10,
+        "description":[
+            "Tamaño de la pantalla: 6.1´ ", "Memoria interna: 128 GB", "Cámara trasera principal: 16 Mpx", "Cámara frontal principal: 10 Mpx", "Desbloqueo: Huella dactilar y reconocimiento facial"
+        ],
         "image": "samsung-galaxy-s10.jpg"
     },
     {
         "id": 4,
         "name": "SmartTv Samsung 43´ ",
         "brand": "Samsung",
-        "category": "Tecnología",
+        "category": "Electrónica",
         "price": 23200,
         "discount": 5,
+        "description":[
+            "Resolución Full HD", "Tecnología HDR para una calidad de imagen mejorada.", "Modo de sonido: Dolby Digital Plus.", "Con YouTube, Netflix, Web browser, Prime Video, Apple TV, Google apps.", "Sistema operativo Tizen.", "Conectá tus dispositivos mediante sus 2 puertos HDMI y su puerto USB.", "Dimensiones: 97.99cm de ancho, 57.19cm de alto, 7.73cm de profundidad."
+        ],
         "image": "tv-samsung-smart.jpg"
     }
 ]

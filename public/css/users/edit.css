@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+
+main{
+    background-color: #ebebeb;
+    height: 300px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 56rem;
+}
+
+main form{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    gap: 5px;
+}
+
+main form input{
+    padding: 5px;
+    border: solid 1px #1259c3;
+}
+
+.profilePicture{
+    border: none;
+    color: #1259c3;
+}
+
+main h2{
+    font-size: 20px;
+}
+
+.form{
+    margin: 15px 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.form select{
+    border: solid 1px #1259c3;
+}
+
+.interests{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.interests label{
+    margin: 2px;
+    accent-color: #1259c3;
+    text-align: left;
+    margin-left: 5.5rem;
+}
+
+
+main form button{
+    border: 0;
+    background-color: #1259c3;
+    width: 25%;
+    padding: 3px;
+    margin-top: 10px;
+    color: white;
+   transition: background-color 200ms;
+}
+
+main form button:hover{
+    background-color: #0022AA;
+}
+
+main button a{
+    border: 0;
+    color: white;
+    text-decoration: none;
+}
+
+

@@ -1,14 +1,22 @@
 [
     {
         "id": 1,
-        "category": "Tecnología"
+        "category": "Electrónica"
     },
     {
         "id": 2,
-        "category": "Electrodomésticos"
+        "category": "Moda"
     },
     {
         "id": 3,
-        "category": "Fitness"
+        "category": "Hogar"
+    },
+    {
+        "id": 4,
+        "category": "Juguetería"
+    },
+    {
+        "id": 5,
+        "category": "Vida Sana"
     }
 ]

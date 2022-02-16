@@ -3,7 +3,10 @@ const model = require('../models/users');
 const bcrypt = require("bcrypt");
 
 module.exports = {
-    index: (req, res) => res.send(model.all()),
+    index: (req, res) => res.render("users/index",{
+        users: model.all(),
+        styles: ["users/index"]
+    }),
     login: (req, res)=> res.render("login",{
         styles:["login"]
     }),
@@ -108,5 +111,20 @@ module.exports = {
         res.cookie("email", null,{maxAge: -1})
         //Redirecciono a la home
         return res.redirect("/")
+    },
+    delete:(req,res)=> {
+        model.delete(req.body.id)
+        return res.redirect("/users/")
+    },
+    edit: (req,res) => 
+    res.render("users/edit",{
+        users: model.all(),
+        user: model.search("id", req.params.id),
+        styles: "users/edit"
+    }),
+    modify: (req,res) => {
+        let updated = model.edit(req.params.id,req.body)
+        return res.redirect("/users/"+updated.id)
+        
     },
 }

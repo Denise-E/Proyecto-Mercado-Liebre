@@ -21,7 +21,7 @@ const model = {
         rol: data.rol,
         interests: [data.interests],
         image: data.image  ? data.image : "default.png",
-        idAdmin: String(data.email).includes("@mercadoliebre.com") ,
+        isAdmin: String(data.email).includes("@mercadoliebre.com") ,
         isActive: true
     }),
     create: data => {
@@ -30,6 +30,32 @@ const model = {
         all.push(user);
         model.write(all);
         return user;
+    },
+    delete: id => {
+        let deleted = model.all().filter(e => e.id != id)
+        model.write(deleted)
+    },
+    edit: (id,data) =>{
+        let all = model.all();
+        let updated = all.map (e =>{
+            if(e.id == id){
+                e.name = data.name;
+                e.lastName = data.lastName;
+                e.email = data.email;
+                e.birthdayDate = data.birthdayDate;
+                e.adress = data.adress;
+                e.userId = data.userId;
+                e.password = data.password;
+                e.rol = data.rol;
+                e.interests = [data.interests];
+                e.image = data.image;
+                return e
+            }
+            return e
+        })
+        model.write(updated);
+        let product = model.search ("id", id);
+        return product
     },
     validate :[
         body("name").isEmpty().isLength({min:2}),

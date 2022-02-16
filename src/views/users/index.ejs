@@ -1,0 +1,36 @@
+<%- include("../includes/head")  %> 
+
+<body>
+    <%- include("../includes/header")  %>
+
+    <main>
+        <% users.forEach(element => { %>
+            <article>
+                <h1><%= element.name %>  <%= element.lastName %> </h1>
+                <img src="/uploads/<%= element.image %>" alt="">
+                <p>Nombre de usuario : <%= element.userId %> </p>
+                <p><%= element.email %> </p>
+                <p>Rol : <%= element.rol %> </p>
+
+                
+                <% if (element.isAdmin) { %>
+                    <p>Este usuario es administrador.</p>
+                <% } %>
+
+                <% if (!element.isActive) { %>
+                    <p>Este usuario no se encuentra activo</p>
+                <% } %>
+
+                    <a href="/users/editarProducto/<%= element.id %>"><i class="fas fa-pen"></i></a>
+                    <form action="/users/?m=DELETE" method="post">
+                      <input type="hidden" name="id" value="<%= element.id %>">
+                      <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
+                      
+                  </form>
+
+            </article>
+        <% }) %>
+    </main>
+
+    <%- include("../includes/footer")  %>
+</body>

@@ -9,10 +9,5 @@ module.exports = {
             product: products.find(product => product.id == req.params.id),
             styles: ["/products/show"]
     })},
-    categories: (req, res) => res.render("products/categories",{
-        products: products,
-        category: categories,
-        styles: ["/products/categories"]
-    })
 
 }
