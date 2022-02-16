@@ -49,7 +49,6 @@ const model = {
                 e.rol = data.rol;
                 e.interests = [data.interests];
                 e.image = data.image;
-                return e
             }
             return e
         })

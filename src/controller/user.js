@@ -123,8 +123,8 @@ module.exports = {
         styles: "users/edit"
     }),
     modify: (req,res) => {
-        let updated = model.edit(req.params.id,req.body)
-        return res.redirect("/users/"+updated.id)
+        let updated = model.edit(req.params.id, req.body)
+        return res.redirect("/users/")
         
     },
 }
