@@ -76,6 +76,22 @@
     "image": "default.png",
     "isAdmin": false,
     "isActive": true
+  },
+  {
+    "id": 6,
+    "name": "Joaquin",
+    "lastName": "Gut",
+    "email": "joaco@hotmail.com",
+    "birthdayDate": "1980-02-01",
+    "adress": "Sargento 98",
+    "userId": "Joaco-Gut",
+    "password": "$2b$10$j5/JAFNOUuDSeyVDvNXZFuyFMZI3TVlvwsPpyIfnjlWppfgyPJuCa",
+    "rol": "comprador",
+    "interests": [
+      null
+    ],
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
   }
-
 ]

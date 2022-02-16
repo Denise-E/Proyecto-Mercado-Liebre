@@ -9,11 +9,13 @@
     </section>
     <section class="headerNavbar">
         <nav class="leftNavbar">
-        <select name="categories" id="categories" required> 
+        <select name="categories" id="categories" onchange="window.location.href=this.options[this.options.selectedIndex].value"> 
             <option value="">Categorías</option>
-            <option value="comprador"><a href="">Tecnología</a></option>
-            <option value="vendedor"><a href="">Electrodomésticos</a></option>
-            <option value="vendedor"><a href="">Fitness</a></option>
+            <option value="/categories/1">Electrónica</option>
+            <option value="/categories/2">Moda</option>
+            <option  value="/categories/3">Hogar</option>
+            <option value="/categories/4">Juguetería</option>
+            <option value="/categories/5">Vida sana</option>
         </select>
             <a href="#">Ofertas</a>
             <a href="#">Tiendas Oficiales</a>
