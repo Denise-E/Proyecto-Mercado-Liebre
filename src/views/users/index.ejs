@@ -6,28 +6,29 @@
     <main>
         <% users.forEach(element => { %>
             <article>
-                <h1><%= element.name %>  <%= element.lastName %> </h1>
+                <h1 id="name"><%= element.name %>  <%= element.lastName %> </h1>
                 <img src="/uploads/<%= element.image %>" alt="">
-                <p>Nombre de usuario : <%= element.userId %> </p>
-                <p><%= element.email %> </p>
-                <p>Rol : <%= element.rol %> </p>
-
+                <div>
+                    <p id="information"> <strong>Nombre de usuario :</strong> <%= element.userId %> </p>
+                    <p id="information"> <strong>Mail :</strong>  <%= element.email %> </p>
+                    <p id="information"><strong>Rol :</strong>  <%= element.rol %> </p>
+                </div>
                 
                 <% if (element.isAdmin) { %>
-                    <p>Este usuario es administrador.</p>
+                    <p id="information">Este usuario es administrador.</p>
                 <% } %>
 
                 <% if (!element.isActive) { %>
-                    <p>Este usuario no se encuentra activo</p>
+                    <p id="information">Este usuario no se encuentra activo</p>
                 <% } %>
 
-                <% if (element.isAdmin){ %>
+                <section class="adminsIcons">
                     <a href="/users/editarProducto/<%= element.id %>"><i class="fas fa-pen"></i></a>
                     <form action="/users/?m=DELETE" method="post">
                       <input type="hidden" name="id" value="<%= element.id %>">
                       <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>
                   </form>
-                  <% }%>
+                </section>
 
             </article>
         <% }) %>

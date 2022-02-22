@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+main{
+    text-align: center;
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article{
+    
+    background-color: white;
+    border: 1px solid #1259c3;
+    width: 65%;
+    margin: 1rem;
+    height: 25rem;
+}
+
+#name{
+    color: #0022AA;
+    margin: 1rem;
+    font-size: 20px;
+}
+
+img{
+    height: 40%
+}
+
+article #information{
+    text-align: left;
+    margin: 1rem;
+}
+
+.adminsIcons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.deleteButton{
+    background-color: white;
+    width: 40px;   
+    border: none;
+}
+
+.fa-trash, .fa-pen{
+    font-size: 1.5rem;
+    color: #1259c3;
+    margin: 2px;
+}
+
+.fa-trash:hover, .fa-pen:hover{
+    color: #0022AA
+}
+
+
+@media screen and (min-width: 361px) {
+ main{
+     flex-direction: row;
+ }   
+}

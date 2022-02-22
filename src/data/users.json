@@ -95,5 +95,22 @@
     "image": "default.png",
     "isAdmin": false,
     "isActive": true
+  },
+  {
+    "id": 8,
+    "name": "Denise",
+    "lastName": "Eichenblat",
+    "email": "denise@mercadoliebre.com",
+    "birthdayDate": "2001-02-01",
+    "adress": "Goyena 80",
+    "userId": "DeniseE",
+    "password": "$2b$10$H4DPo3HL8XIIqbbwT9WPRuifeb14etpVEgVCmVmlzzaQoF46wkNay",
+    "rol": "vendedor",
+    "interests": [
+      null
+    ],
+    "image": "default.png",
+    "isAdmin": true,
+    "isActive": true
   }
 ]

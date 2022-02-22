@@ -32,6 +32,7 @@ module.exports = {
         let exist = model.search("userId", req.body.userId);
         if (!exist){
             return res.render("login",{ 
+                styles:["login"],
                 errors:{
                     email:{
                         msg: "El usuario no está registrado "
@@ -43,6 +44,7 @@ module.exports = {
         //Hace comparativo para ver si está bien la pasada
         if (!bcrypt.compareSync(req.body.password, exist.password)){
             return res.render("login",{ 
+                styles:["login"],
                 errors:{
                     password:{
                         msg: "Password is not valid",
