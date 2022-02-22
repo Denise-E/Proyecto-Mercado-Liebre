@@ -23,19 +23,15 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 .logo{
     max-width: 50%;
 }
-
-.searchBar{
-    display: flex;
-    flex-direction: main;
-    width: 50%;
-    padding: 20px;
+.searchBar fieldset{
+    border: none;
 }
-
 .searchBar input{
     border-radius: 3px;
     padding: 5px;
@@ -50,9 +46,6 @@ header{
     border: none;
     outline: none;
     background-color: white;
-}
-
-.searchButton{
     position: relative;
     left: -5.5px;
 }
@@ -73,7 +66,11 @@ header nav a{
     transition: all 200ms;
 }
 
-header nav a:hover{
+.leftNavbar #categories{
+    display: none;
+}
+
+header nav a:hover, .leftNavbar #categories:hover{
     color: #1259c3;
 }
 
@@ -99,30 +96,35 @@ header nav a:hover{
     header nav a{
         display: flex;
     }
+    .leftNavbar #categories{
+        display: flex;
+    }
 
     .burgerMenu{
         display: none;
     }
 
     .logo{
-        max-width: 30%;
+        max-width: 20%;
         justify-content: left;
     }
-
     .searchBar{
-        max-width: 30%;
+        width: 40%;
     }
-    
+
+    .searchBar button{
+        left: -6.5px;
+    }
     .headerTopBar{
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 
     .copyHeader{
         font-size: 10px;
-        max-width: 30%;
-        align-self: center;
+        max-width: 20%;
+        justify-content: right;
     }
 
     .headerNavbar{
@@ -152,12 +154,8 @@ header nav a:hover{
         text-align: center;
     }
 
-    .headerTopBar{
-        flex-wrap: nowrap;
-    }
-
     .searchBar{
-        max-width: 50%;
+        width: 30%;
         justify-content: center;
     }
 

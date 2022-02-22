@@ -71,8 +71,8 @@ main h2{
 main form button{
     border: 0;
     background-color: #1259c3;
-    width: 25%;
-    padding: 3px;
+    width: 40%;
+    padding: 0.25rem;
     margin-top: 10px;
     color: white;
    transition: background-color 200ms;
@@ -88,4 +88,10 @@ main button a{
     text-decoration: none;
 }
 
+@media screen and (min-width: 769px){
+    main form button{
+        width: 40%;
+        padding: 0.5rem;
+    }
+}
 

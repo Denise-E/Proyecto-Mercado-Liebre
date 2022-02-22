@@ -1,20 +1,5 @@
 [
   {
-    "id": 1,
-    "name": "Denise",
-    "lastName": "Eichen",
-    "email": "denise@mercadoliebre.com",
-    "birthdayDate": "2001-02-01",
-    "adress": "Goyena 80",
-    "userId": "DeniseE",
-    "password": "$2b$10$4PC2XNOOFCrzzVynEcZlZ.3wa7w5d7mfzYvdKE.8TzJltvQoz/72S",
-    "rol": "comprador",
-    "interests": "Electrónica",
-    "image": "default.png",
-    "isAdmin": true,
-    "isActive": true
-  },
-  {
     "id": 2,
     "name": "Federico",
     "lastName": "Rojas",
