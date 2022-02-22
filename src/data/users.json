@@ -93,5 +93,22 @@
     "image": "default.png",
     "isAdmin": false,
     "isActive": true
+  },
+  {
+    "id": 7,
+    "name": "Martina",
+    "lastName": "Etulain",
+    "email": "martina@gmail.com",
+    "birthdayDate": "2005-10-10",
+    "adress": "Pedro 34",
+    "userId": "Martina",
+    "password": "$2b$10$jfvC1Gc4H81nMo9Ys7v7V.J5Z/mwdc.azfQ7MNI8Cfyk6Etc2mHwK",
+    "rol": "vendedor",
+    "interests": [
+      null
+    ],
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
   }
 ]

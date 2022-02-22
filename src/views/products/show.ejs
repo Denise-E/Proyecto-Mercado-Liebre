@@ -10,9 +10,9 @@
                 <section class="articleInfo">
                     <h1><%= product.name %> </h1>
                      <p class="prices">$ <%= product.price %> </p>  
-                     <li>
-                         <ul><%= product.description %></ul>
-                   </li>    
+                    <% for( let i = 0; i < product.description.length; i++ ) { %>
+                        <p><%= product.description[i] %> </p>
+                    <% } %>
                 <form action="GET">
                     <button type="submit">Comprar ahora</button>
                 </form>      

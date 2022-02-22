@@ -21,9 +21,9 @@ app.use(session({
     saveUninitialized: true,
     resave: false,
 }));
-app.use(method("m"))
+app.use(method("m"));
 
-app.use(require('./middlewares/user'));
+app.use(require('./middlewares/user.js'));
 
 app.use(require("./routes/index"));
 app.use("/users", require("./routes/user"));
