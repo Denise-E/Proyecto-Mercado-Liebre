@@ -21,10 +21,16 @@ main{
 article{
     
     background-color: white;
-    border: 1px solid #1259c3;
     width: 65%;
     margin: 1rem;
     height: 25rem;
+    box-shadow: 0;
+    transition: box-shadow 200ms;
+
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 #name{
@@ -67,6 +73,15 @@ article #information{
 
 @media screen and (min-width: 361px) {
  main{
-     flex-direction: row;
+  justify-content: row;    
+ }
+ article{
+     width: 35%;
  }   
 }
+
+@media screen and (min-width: 769px) {
+    article{
+        width: 28%;
+    }   
+   }
