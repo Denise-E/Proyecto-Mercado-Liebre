@@ -4,12 +4,9 @@
     <%- include("../includes/header")  %> 
     
 <main>
-        <h1><%= category.category %> </h1>
-           
-                
+        <h1><%= category.category %> </h1>     
+
                 <% products.filter(element => element.category == category.category).forEach(element => { %>
-                    <ul class= "listadoProductos">
-                         <li>
                             <a href="/products/<%= element.id %>"> 
                                 <article>
                                     <img src= "/images/<%=element.image %>">
@@ -23,8 +20,6 @@
                                 </section>
                                 </article>
                             </a>
-                    </li>  
-                </ul>
                 <% }) %>
 </main>
 
