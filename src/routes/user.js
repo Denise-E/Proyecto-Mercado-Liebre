@@ -12,8 +12,7 @@ const upload = multer ({storage: multer.diskStorage({
 })});
 
 
-//[auth], 
-router.get("/",user.index);
+router.get("/",[auth],user.index);
 
 router.get("/login", user.login);
 router.get("/register", user.register);
