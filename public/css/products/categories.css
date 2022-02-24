@@ -27,7 +27,7 @@ article{
     height: 80%;
     background-color: white;box-shadow: 0;
     transition: box-shadow 200ms;
-    margin: 2rem 0;
+    margin: 2rem 0 2rem 1rem;
 
 }
 
@@ -56,4 +56,18 @@ a{
 
 ul,li{
     text-decoration: none;
+}
+
+
+@media screen and (min-width: 361px) {
+  .article {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    article{
+        width: 30%;
+        height: 40%;
+    }
 }

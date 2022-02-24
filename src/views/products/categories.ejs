@@ -5,10 +5,11 @@
     
 <main>
         <h1><%= category.category %> </h1>     
-
+         <section class="article">
                 <% products.filter(element => element.category == category.category).forEach(element => { %>
-                            <a href="/products/<%= element.id %>"> 
+                             
                                 <article>
+                                <a href="/products/<%= element.id %>">
                                     <img src= "/images/<%=element.image %>">
                                 <section>
                                     <section>
@@ -18,9 +19,11 @@
                                     </section>
                                 <p> <%= element.name %> </p>  
                                 </section>
+                                </a>
                                 </article>
-                            </a>
+                            
                 <% }) %>
+            </section>
 </main>
 
 <%- include("../includes/footer") %> %> 
