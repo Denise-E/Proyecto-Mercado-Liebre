@@ -102,6 +102,8 @@ module.exports = {
             })
         }
 
+        req.body.image = req.file ? req.file.fileName : "default.png";
+
         //Para guardar usuario registrado :
         let userRegistred = model.create(req.body)
 

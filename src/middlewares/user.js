@@ -4,14 +4,14 @@ const user = (req,res,next) =>{
     //Porque inicialmente no hay usuarios en la app
     let user = null;
     //Veo si hay cookie y si tiene guardado mail
-    if(req.cookie && req.cookie.email){
+    if(req.cookie && req.cookie.userId){
         //Guardo cookie en user
-        user = userModel.search("email", req.cookie.email)
+        user = userModel.search("userId", req.cookie.userId)
         //guarda e session el usuario
         req.session.user = user;
     }
 
-    if(req.session && req.session.email){
+    if(req.session && req.session.user){
         user = req.session.user;
     }
 
