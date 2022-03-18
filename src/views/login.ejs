@@ -8,14 +8,16 @@
             <h2>Inicio de Sesión</h2>
             <section class="form">
                 <label for="">Nombre de usuario:</label>
-                <input type="text" name="userId" id="">
+                <input type="text" name="userId" id="userId">
+                <p  class="userIdFeed"></p>
                 <% if (locals.errors && errors.userId) { %>
                     <p><%= errors.userId.msg %> </p>
                 <% } %>
                 <br>
 
                 <label for="">Contraseña:</label>
-                <input type="password" name="password" placeholder="*************">
+                <input type="password" name="password" placeholder="*************" id="password">
+                <p class="passwordFeed"></p>
                  <% if (locals.errors && errors.password) { %>
                     <p><%= errors.password.msg %> </p>
                 <% } %>
@@ -27,9 +29,7 @@
                 <button type="submit">Iniciar Sesión</button>   
             </section>
         </form>  
-        
-           
-          
+        <script src="/js/login.js"></script>
     </main>
 
     <%- include("./includes/footer")  %>    
