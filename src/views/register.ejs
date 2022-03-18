@@ -10,6 +10,7 @@
                 <h2>Datos personales</h2>
                 <label>Nombre:</label>
                 <input type="text" name="name" id="name" minlength="2" >
+                <p class="nameFeed"></p>
                 <% if (locals.errors && errors.name) { %>
                     <p><%= errors.name.msg %> </p>
                 <% } %>
@@ -17,6 +18,7 @@
 
                 <label for="">Apellido:</label>
                 <input type="text" name="lastName" id="lastName">
+                <p class="lastNameFeed"></p>
                 <% if (locals.errors && errors.lastName) { %>
                     <p><%= errors.lastName.msg %> </p>
                 <% } %>
@@ -24,6 +26,7 @@
 
                 <label for="">Correo electrónico:</label>
                 <input type="email" name="email" id="email">
+                <p class="emailFeed"></p>
                 <% if (locals.errors && errors.email) { %>
                     <p><%= errors.email.msg %> </p>
                 <% } %>
@@ -31,6 +34,7 @@
 
                 <label for="">Fecha de nacimiento:</label>
                 <input type="date" name="birthdayDate" id="birthdayDate">
+                <p class="birthdayDateFeed"></p>
                 <% if (locals.errors && errors.birthdayDate) { %>
                     <p><%= errors.birthdayDate.msg %> </p>
                 <% } %>
@@ -38,6 +42,7 @@
 
                 <label for="">Domicilio:</label>
                 <input type="text" name="adress" id="adress">
+                <p class="adressFeed"></p>
                 <% if (locals.errors && errors.adress) { %>
                     <p><%= errors.adress.msg %> </p>
                 <% } %>
@@ -48,6 +53,7 @@
                 <h2>Perfil del Usuario</h2>
                 <label for="">Nombre de usuario:</label>
                 <input type="text" name="userId" id="userId">
+                <p class="userIdFeed"></p>
                 <% if (locals.errors && errors.userId) { %>
                     <p><%= errors.userId.msg %> </p>
                 <% } %>
@@ -55,6 +61,7 @@
 
                 <label for="">Contraseña:</label>
                 <input type="password" name="password" minlength="8" placeholder="*************" id="password">
+                <p class="passwordFeed"></p>
                 <% if (locals.errors && errors.password) { %>
                     <p><%= errors.password.msg %> </p>
                 <% } %>
@@ -78,6 +85,7 @@
             <section>  
                 <label for="">Foto de perfil:</label>
                 <input type="file" name="image" class="profilePicture" id="image">
+                <p class="imageFeed"></p>
                 <% if (locals.errors && errors.image) { %>
                     <p><%= errors.image.msg %> </p>
                 <% } %>
