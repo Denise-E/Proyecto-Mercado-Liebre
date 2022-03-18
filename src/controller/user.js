@@ -66,16 +66,17 @@ module.exports = {
     },
     // Donde procesamos registro
     save: (req,res) => {
-        //Contiene erorres de las validaciones
-        let errors = validator.validationResult(req);
+      //Contiene erorres de las validaciones
+      let errors = validator.validationResult(req);
 
-        //Esto para que me valide cerrores
-        /**  if (!errors.isEmpty()){
-            return res.render("register",{
-                styles:["register"],
-                errors: errors.mapped()
-            })
-        }*/
+      //Esto para que me valide contraseña
+      if (!errors.isEmpty()){
+          return res.render("register",{
+              styles:["register"],
+              errors: errors.mapped()
+          })
+      }
+
 
         //Para saber cuado se registran si anteriormente estaban registrados :
         let exist = model.search("email", req.body.email);

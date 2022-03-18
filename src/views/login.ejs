@@ -8,24 +8,28 @@
             <h2>Inicio de Sesión</h2>
             <section class="form">
                 <label for="">Nombre de usuario:</label>
-                <input type="text" name="userId" id="" required>
-                <span class="feedback"></span>
+                <input type="text" name="userId" id="">
+                <% if (locals.errors && errors.userId) { %>
+                    <p><%= errors.userId.msg %> </p>
+                <% } %>
+                <br>
+
                 <label for="">Contraseña:</label>
-                <input type="password" name="password" placeholder="*************" required>
-                <span class="feedback"></span>
+                <input type="password" name="password" placeholder="*************">
+                 <% if (locals.errors && errors.password) { %>
+                    <p><%= errors.password.msg %> </p>
+                <% } %>
+                <br>
+
                  <label for="">Recordarme
                      <input type="checkbox" name="remember" id="remmeber">
                  </label>
                 <button type="submit">Iniciar Sesión</button>   
             </section>
         </form>  
-        <% if (locals.errors && errors.email) { %>
-            <p><%= errors.email.msg %> </p>
-           <% } %>
+        
            
-           <% if (locals.errors && errors.password) { %>
-               <p><%= errors.password.msg %> </p>
-            <% } %>
+          
     </main>
 
     <%- include("./includes/footer")  %>    

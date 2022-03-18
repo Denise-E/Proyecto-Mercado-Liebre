@@ -10,6 +10,8 @@ const upload = multer ({storage: multer.diskStorage({
     destination: (req, file, cb) => cb(null, path.resolve (__dirname, "../../uploads")),
       filename: (req, file, cb) => cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname)),
 })});
+let validateRegister = require('../validations/register.js')
+let validateLogin = require('../validations/login.js')
 
 
 router.get("/",[auth],user.index);
@@ -21,8 +23,8 @@ router.get("/profile",[access], user.profile);
 router.get("/edit/:id", user.edit);
 router.get("/:id",[access], user.show);
 
-router.post("/",[validate, upload.single("image")], user.save); // REGISTER
-router.post("/access", user.access); // LOGIN
+router.post("/",[validateRegister, upload.single("image")], user.save); // REGISTER
+router.post("/access",[validateLogin], user.access); // LOGIN
 router.post("/logout",[validate], user.logout);
 
 router.put("/:id", user.modify);

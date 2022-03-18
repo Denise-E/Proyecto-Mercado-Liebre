@@ -118,5 +118,22 @@
     "image": "default.png",
     "isAdmin": false,
     "isActive": true
+  },
+  {
+    "id": 9,
+    "name": "",
+    "lastName": "",
+    "email": "",
+    "birthdayDate": "",
+    "adress": "",
+    "userId": "",
+    "password": "$2b$10$U0IM4A1I2omr1Yd1puirTulT2MLq6NjnBhCGkmgfiVLHCaPfYf9Ju",
+    "rol": "comprador",
+    "interests": [
+      null
+    ],
+    "image": "default.png",
+    "isAdmin": false,
+    "isActive": true
   }
 ]
