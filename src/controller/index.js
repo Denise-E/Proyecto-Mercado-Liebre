@@ -7,5 +7,9 @@ module.exports = {
     home: (req, res)=> res.render("home",{
         products: products,
         styles: ["home"]
-    })
+    }),
+    searchBar:(req,res)=> {
+        //let research = model.search(req.body.search);
+        //console.log(research);
+    }
 }

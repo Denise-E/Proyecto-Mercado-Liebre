@@ -14,7 +14,7 @@ module.exports = {
         styles:["register"]
     }),
     profile: (req, res)=> res.render("profile",{
-        styles:[]
+        styles:["users/profile"]
     }),
     // Donde procesamos log in:
     access: (req,res) =>  {
@@ -131,4 +131,8 @@ module.exports = {
         return res.redirect("/users/")
         
     },
+    show: (req,res) => res.render("users/show", { 
+        styles:["users/show"],
+        user: model.search("id", req.params.id)
+    }),
 }

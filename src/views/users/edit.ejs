@@ -9,22 +9,22 @@
             <section class="form">
                 <h2>Datos personales</h2>
                 <label>Nombre:</label>
-                <input type="text" name="name" id="" minlength="2">
+                <input type="text" name="name" value="<%= user.name %>" minlength="2" >
                 <span class="feedback"></span>
                 <label for="">Apellido:</label>
 
-                <input type="text" name="lastName" id="">
+                <input type="text" name="lastName" id=""value="<%= user.lastName %>" >
                 <label for="">Correo electrónico:</label>
-                <input type="email" name="email" id="">
+                <input type="email" name="email" id="" value="<%= user.email %>" >
                 <label for="">Fecha de nacimiento:</label>
-                <input type="date" name="birthdayDate" id="">
+                <input type="date" name="birthdayDate" id="" value="<%= user.birthdayDate %>" >
                 <label for="">Domicilio:</label>
-                <input type="text" name="adress" id="">
+                <input type="text" name="adress" id="" value="<%= user.adress %>">
             </section>
             <section class="form">
                 <h2>Perfil del Usuario</h2>
                 <label for="">Nombre de usuario:</label>
-                <input type="text" name="userId" required>
+                <input type="text" name="userId" value="<%= user.userId %>" required>
                 <label for="">Contraseña:</label>
                 <input type="password" name="password" minlength="8" placeholder="*************" >
                 <label for="">Confirmar contrsaseña:</label>
@@ -47,7 +47,7 @@
             <section>  
                 <label for="">Foto de perfil:</label>
                 <input type="file" name="image" class="profilePicture">
-                <button type="submit">Guardar cambios</button> 
+                <button type="submit" href="/">Guardar cambios</button> 
             </section>
         </form>
     </main>

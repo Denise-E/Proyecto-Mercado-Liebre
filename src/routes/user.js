@@ -19,6 +19,7 @@ router.get("/register", user.register);
 router.get("/profile",[access], user.profile);
 
 router.get("/edit/:id", user.edit);
+router.get("/:id",[access], user.show);
 
 router.post("/",[validate, upload.single("image")], user.save); // REGISTER
 router.post("/access", user.access); // LOGIN

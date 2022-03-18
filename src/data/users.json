@@ -100,17 +100,23 @@
     "id": 8,
     "name": "Denise",
     "lastName": "Eichenblat",
-    "email": "denise@mercadoliebre.com",
+    "email": "denise.eichenblat@gmail.com",
     "birthdayDate": "2001-02-01",
     "adress": "Goyena 80",
     "userId": "DeniseE",
-    "password": "$2b$10$H4DPo3HL8XIIqbbwT9WPRuifeb14etpVEgVCmVmlzzaQoF46wkNay",
+    "password": "$2b$10$rLHmy8e2oDTOhalSWuaYye/Zx/i/IbgSyQGAC9ypk9AJ5BEITdiIe",
     "rol": "vendedor",
     "interests": [
-      null
+      [
+        "electronica",
+        "moda",
+        "hogar",
+        "juguetería",
+        "vidaSana"
+      ]
     ],
     "image": "default.png",
-    "isAdmin": true,
+    "isAdmin": false,
     "isActive": true
   }
 ]

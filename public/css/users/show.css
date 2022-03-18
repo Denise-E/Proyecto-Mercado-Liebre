@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ #penButton{
+    color: #1259c3;
+ }   
+
+#penButton:hover{
+    background-color: #0022AA;
+}

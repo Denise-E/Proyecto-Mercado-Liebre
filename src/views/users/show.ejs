@@ -1,3 +1,4 @@
+<%- include("../includes/head")  %> 
 
 <body class="body">
     <%- include("../includes/header")  %>
@@ -19,7 +20,7 @@
        <% } %> 
     
     <p class="datos">Actualizá tus datos:</p>
-    <a href="/users/edit/<%= user.id %>"><i class="fas fa-pen"></i></a>
+    <a href="/users/edit/<%= user.id %>" ><i class="fas fa-pen" id="penButtom"></i></a>
     </div>
    </article>
 </main>

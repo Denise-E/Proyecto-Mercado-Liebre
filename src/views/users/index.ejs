@@ -23,7 +23,7 @@
                 <% } %>
 
                 <section class="adminsIcons">
-                    <a href="/users/editarProducto/<%= element.id %>"><i class="fas fa-pen"></i></a>
+                    <a href="/users/edit/<%= element.id %>"><i class="fas fa-pen"></i></a>
                     <form action="/users/?m=DELETE" method="post">
                       <input type="hidden" name="id" value="<%= element.id %>">
                       <button type="submit" class="deleteButton"><i class="fas fa-trash"></i></button>

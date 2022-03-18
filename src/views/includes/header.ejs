@@ -1,9 +1,9 @@
 <header>
     <section class="headerTopBar">
         <img src="/images/logo_ml.svg" alt="Logo Mercado Liebre" class="logo">
-        <form action="" method="get" class="searchBar">
+        <form action="/search" method="post" class="searchBar">
             <fieldset>
-                <input type="search" class="bar" placeholder="Buscar productos, marcas y más">
+                <input type="search" name="search" class="bar" placeholder="Buscar productos, marcas y más" data-search>
                 <button type="submit" class="searchButton"> <i class="fas fa-search"></i></button>
             </fieldset>
         </form>
@@ -25,13 +25,22 @@
             <a href="#">Vender</a>
             <a href="#">Ayuda</a>
         </nav>
+        <% if (!user){ %>
         <nav class="rightNavbar">
             <a href="/users/register">Creá tu cuenta <i class="far fa-id-card"></i></a> 
             <a href="/users/login">Ingresá <i class="fas fa-sign-in-alt"></i></a> 
             <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
         </nav>
-    </section>
+        <% } else { %>
+        <section class="loggedButtons">
+            <button type="submit" id="profileButton"><a href="/users/<%= user.id %>">Perfil </a> </button>
+            <form action="/users/logout"  method="post" id="logoutForm"><button id="logoutButton" type="submit">Logout</button> </form>
+        </section>
+        <% } %>
     <div class="burgerMenu">
         <i class="fas fa-bars"></i>
     </div>
+    <!--
+    <script src="../../validations/searchBar.js"></script>
+    -->
 </header>
