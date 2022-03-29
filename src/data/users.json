@@ -121,16 +121,16 @@
   },
   {
     "id": 9,
-    "name": "",
-    "lastName": "",
-    "email": "",
-    "birthdayDate": "",
-    "adress": "",
-    "userId": "",
-    "password": "$2b$10$U0IM4A1I2omr1Yd1puirTulT2MLq6NjnBhCGkmgfiVLHCaPfYf9Ju",
+    "name": "Nancy",
+    "lastName": "Sik ",
+    "email": "nancy@gmail.com",
+    "birthdayDate": "1998-02-20",
+    "adress": "hola hola 234",
+    "userId": "Nancy",
+    "password": "$2b$10$ITmerQiTXMLfzE9Nw.DfheuFo2oNRqck4JAarDE1KIpEjAHvB0SBC",
     "rol": "comprador",
     "interests": [
-      null
+      "electronica"
     ],
     "image": "default.png",
     "isAdmin": false,

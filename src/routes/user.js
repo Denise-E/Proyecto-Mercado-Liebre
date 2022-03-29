@@ -23,7 +23,7 @@ router.get("/profile",[access], user.profile);
 router.get("/edit/:id", user.edit);
 router.get("/:id",[access], user.show);
 
-router.post("/",[validateRegister, upload.single("image")], user.save); // REGISTER
+router.post("/",[ upload.single("image")], user.save); // REGISTER 
 router.post("/access",[validateLogin], user.access); // LOGIN
 router.post("/logout",[validate], user.logout);
 
