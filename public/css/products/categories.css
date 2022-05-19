@@ -28,16 +28,40 @@ article{
     background-color: white;box-shadow: 0;
     transition: box-shadow 200ms;
     margin: 2rem 0 2rem 1rem;
-
+    position: relative;
 }
 
 article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    transform: scale(1.05,1.05)
 }
+
+.fa-truck{
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: -14px;
+    transition: transform 400ms;
+}
+
+.fa-truck:hover{
+    transform: rotate(-90deg);
+}
+
 h1{
     margin: 1.5rem 0;
     text-align: center;
     color: #0022AA;;
+    font-size: 30px;
+    padding: 1rem;
 }
 
 h3{
@@ -58,6 +82,14 @@ ul,li{
     text-decoration: none;
 }
 
+.article section{
+    text-align: center;
+    font-size: 18px;
+}
+
+.article img{
+    border-bottom: solid 2px #39b54a;
+}
 
 @media screen and (min-width: 361px) {
   .article {
@@ -69,5 +101,12 @@ ul,li{
     article{
         width: 30%;
         height: 40%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .fa-truck{
+        right: 15px;
+        top: 20rem;
     }
 }

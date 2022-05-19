@@ -4,20 +4,23 @@
     <%- include("../includes/header")  %> 
     
 <main>
+    <% 
+        function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.')   
+        }
+    %>
         <h1><%= category.category %> </h1>     
          <section class="article">
                 <% products.filter(element => element.category == category.category).forEach(element => { %>
                              
                                 <article>
-                                <a href="/products/<%= element.id %>">
+                                    <a href="/products/<%= element.id %>">
                                     <img src= "/images/<%=element.image %>">
+                                    <i class="fas fa-truck"></i> 
                                 <section>
-                                    <section>
-                                        <h3><%= element.name %> </h3>
-                                     <p>$ <%= element.price %> </p>
-                                     <p><%= element.discount %>% OFF</p>   
-                                    </section>
-                                <p> <%= element.name %> </p>  
+                                     <h3><%= element.name %> </h3>
+                                     <p>$ <%= formatNumber(element.price) %> </p>
+                                     <p><%= element.discount %>% OFF</p>     
                                 </section>
                                 </a>
                                 </article>
